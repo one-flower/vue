@@ -8,5 +8,12 @@ module.exports = {
       // 出口文件
       filename: "index.html"
     }
+  },
+  chainWebpack: config => {
+    config.module.rule('js').include.add('/packages').end().use('babel').loader('babel-laoder').tap(ootions => {
+      // 修改他的选项
+      return ootions
+    })
   }
+
 }

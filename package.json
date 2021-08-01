@@ -1,11 +1,14 @@
 {
-  "name": "vue",
+  "name": "hua-vue",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "自己的Vue学习框架",
+  "author": "华殿下",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib":"vue-cli-service build --target lib --name hua-vue --dist lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
